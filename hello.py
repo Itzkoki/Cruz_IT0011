@@ -1,3 +1,5 @@
-name = "Francis"
-print("Hello, " + name + "!")
+name = input("Enter name: ")
+print("Name:", name)
+
+    
 
