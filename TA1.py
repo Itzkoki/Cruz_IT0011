@@ -1,10 +1,9 @@
-#Count vowels and consonat
-
+#1.) Count Vowels and Consonat
 count_vowels = 0
 count_consonant = 0
 
-print("\nCount vowels and consonat")
-variable = input("Enter a string here:")
+print("\nCount Vowels and Consonat")
+variable = input("Enter a String here: ")
 vowels = "AEIOUaeiou"
 
 for x in variable:
@@ -13,17 +12,37 @@ for x in variable:
     else:
         count_consonant += 1
         
-print("Vowels count:",count_vowels)
-print("Consonant count:",count_consonant)
+print("Vowels count: ",count_vowels)
+print("Consonant count: ",count_consonant)
 
 
-#Sum of all Digits in a String
-
+#2.) Sum of all Digits in a String
 print("\nSum of all Digits in a String")
-s = input("Enter: ")
+s = input("Enter String and Digits: ")
 sum = 0
 
 for i in s:
     if i.isdigit():
         sum += int(i)    
 print("Sum: ",sum)
+
+
+#3. A. Nested Loop 
+print("\nProgram A Nested For statement")
+n = (int(input("Enter your number: ")))
+
+for i in range(1, n + 1):
+    print(" " * (n - i), end="")
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+   
+    
+#3. B. While Loop
+print("\nProgram B Nested While statement")
+n = int(input("Enter any number: "))
+row = 1
+
+while row <= n:
+    print(str(row) * row)
+    row += 1
