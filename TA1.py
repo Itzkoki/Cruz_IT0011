@@ -22,9 +22,8 @@ s = input("Enter String and Digits: ")
 sum = 0
 
 for i in s:
-    if i.isdigit():
-        sum += int(i)    
-print("Sum: ",sum)
+    sum += int(i)
+print("The total sum is: ", sum)
 
 
 #3. A. Nested Loop 
