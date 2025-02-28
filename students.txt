@@ -1,0 +1,36 @@
+Last Name: Cruz
+First Name: Francis
+Age: 20
+Contact Number: 09
+Course: BSITCST
+ 
+Last Name: Asido
+First Name: Van
+Age: 20
+Contact Number: 08
+Course: BSITCST
+ 
+Last Name: Bongon
+First Name: Yeoh
+Age: 20
+Contact Number: 07
+Course: BSITCST
+ 
+Last Name: Ferrer
+First Name: Robi
+Age: 99
+Contact Number: 06
+Course: BSITCST
+ 
+Last Name: Samson
+First Name: Johan
+Age: 60
+Contact Number: 05
+Course: BSITCST
+ 
+Last Name: Fabian
+First Name: Alexander
+Age: 20
+Contact Number: 04
+Course: BSTICST
+ 
