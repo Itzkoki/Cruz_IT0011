@@ -1,6 +1,6 @@
 # 3.4 Activity for Reading File Contents and Display
 try:
-    with open("students.txt", "r") as f:
+    with open("Activity 03/students.txt", "r") as f:
         content = f.read()
         if content:
             print("Reading Student Information:")
