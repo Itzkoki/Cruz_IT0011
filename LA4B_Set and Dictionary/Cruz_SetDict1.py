@@ -12,7 +12,7 @@ print("How many elements are there in B that is not part of A and C")
 print(len(set_b - (set_a | set_c)))
 
 #C. Show the following using set operations
-print("i.", (sort.(set_c - set_a ))) #[h, i, j, k]
+print("i.", (sorted(set_c - set_a ))) #[h, i, j, k]
 print("ii.", (sorted(set_a & set_c)))#[c, d, f]
 print("iii.", (sorted(set_b & (set_a | set_c))))#[b, c, h]
 print("iv.", (sorted({"d", "f"} & (set_a | set_c) - set_b)))#[d, f]
