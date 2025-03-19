@@ -29,7 +29,7 @@ def main():
         choice = input("\nEnter your choice: ").upper()
         
         if choice == 'Q':
-            print("Exiting program...")
+            print("Exiting program.")
             break
         
         try:
