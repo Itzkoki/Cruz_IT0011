@@ -1,76 +1,66 @@
 #Laboratory Activity: Function
-
 #[D] - Divide (the second number or denominator must not be equal to zero)
 #[E] - Exponentiation
 #[R] - Remainder (the second number or denominator must not be equal to zero)
 #[F] - Summation 
 
 def divide(num1, num2):
-    return None if num2 == 0 else num1 / num2
+    if num2 == 0:
+        print("Error: The second number or denominator must not be equal to zero")
+        return None
+    return num1 / num2
 
 def exponent(num1, num2):
     return num1 ** num2
 
 def remainder(num1, num2):
-    return None if num2 == 0 else num1 % num2
+    if num2 == 0:
+        print("Error: the second number or denominator must not be equal to zero")
+        return None
+    return num1 % num2
 
-def summation(start, end):
-    return None if start > end else sum(range(start, end + 1))
+def summation(num1, num2):
+    if num1 > num2:
+        print("Error: Second number must be greater than the first number.")
+        return None
+    return sum(range(num1, num2 + 1))
 
 def main():
     while True:
-        print("\n\tMENU")
-        print("[D]. Division")
-        print("[E]. Exponentiation")
-        print("[R]. Remainder")
-        print("[F]. Summation")
-        print("[Q]. Exit")
-        
+        print("\n\tMENU:")
+        print("[D] - Divide")
+        print("[E] - Exponentiation")
+        print("[R] - Remainder")
+        print("[F] - Summation")
+        print("[Q] - Quit")
+
         choice = input("\nEnter your choice: ").upper()
-        
+
         if choice == 'Q':
-            print("Exiting program.")
+            print("Exiting the program.")
             break
         
-        try:
+        if choice in ['D', 'E', 'R', 'F']:
+            try:
+                num1 = int(input("Enter the first number: "))
+                num2 = int(input("Enter the second number: "))
+            except ValueError:
+                print("Invalid input. Please enter integers only.")
+                continue
+
             if choice == 'D':
-                num1 = float(input("Enter first number: "))
-                num2 = float(input("Enter second number: "))
                 result = divide(num1, num2)
-                if result is None:
-                    print("Error: Cannot divide by zero!")
-                else:
-                    print(f"Result: {result}")
-
             elif choice == 'E':
-                base = float(input("Enter base number: "))
-                power = float(input("Enter power: "))
-                result = exponent(base, power)
-                print(f"Result: {result}")
-
+                result = exponent(num1, num2)
             elif choice == 'R':
-                num1 = float(input("Enter first number: "))
-                num2 = float(input("Enter second number: "))
                 result = remainder(num1, num2)
-                if result is None:
-                    print("Error: Cannot find remainder with zero!")
-                else:
-                    print(f"Result: {result}")
-
             elif choice == 'F':
-                start = int(input("Enter start number: "))
-                end = int(input("Enter end number: "))
-                result = summation(start, end)
-                if result is None:
-                    print("Error: End number must be greater than start number!")
-                else:
-                    print(f"Result: {result}")
+                result = summation(num1, num2)
 
-            else:
-                print("Invalid choice! Please try again.")
-
-        except ValueError:
-            print("Error: Please enter valid numbers!")
+            if result is not None:
+                print(f"Result: {result}")
+        else:
+            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
