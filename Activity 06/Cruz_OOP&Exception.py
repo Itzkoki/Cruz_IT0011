@@ -109,4 +109,8 @@ def main():
             print("Invalid choice. Please select a valid option.")
             
 if __name__ == "__main__":
+<<<<<<< HEAD
     main()
+=======
+    main()  
+>>>>>>> 70a502000c69ea3bc5dcf7b5e561b9d92066049e
